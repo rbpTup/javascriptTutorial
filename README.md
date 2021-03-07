@@ -1,9 +1,6 @@
 # javascriptTutorial
 
 
-Exersice's videos will be here.
-Session's videos will be inside each branch.
-For each session there will be a seperate branch.
-
 Session1:
+  https://drive.google.com/file/d/1qQO1eQyht-Ivn9UcTNwn5ylnfWmqukz6/view?usp=sharing <br />
   Exercise 1: https://drive.google.com/file/d/1K9DUJAZpsfsBRsXefEBlbHLIkYk8BdNs/view?usp=sharing
