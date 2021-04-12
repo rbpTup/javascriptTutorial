@@ -10,3 +10,5 @@ Session1: https://drive.google.com/file/d/1qQO1eQyht-Ivn9UcTNwn5ylnfWmqukz6/view
  <br />
 Session2: https://drive.google.com/file/d/1rlh2Uk0D4WQtpgRa1C1NNmQ-XAOQT2Tl/view?usp=sharing <br />
   Exercise 2: 
+<br /><br />
+Session3: https://drive.google.com/file/d/1kQBPolqyPCsIH-qYEHg0SL1krvtYwUEd/view?usp=sharing
