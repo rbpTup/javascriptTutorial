@@ -61,10 +61,12 @@ function printFirstName() {
 }
 
 function printVal(value){
+  // console.log(window.event);
   console.log(value);
 }
 
 function itsHovered(){
+  // console.log(window.event);
   console.log("Box is Hovered");
 }
 
@@ -80,7 +82,7 @@ b = 4;
 //   console.log(a + b);
 // }, 2000);
 
-setInterval(function() {
-  console.log(a);
-  a += 1;
-}, 2000);
+// setInterval(function() {
+//   console.log(a);
+//   a += 1;
+// }, 2000);
