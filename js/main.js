@@ -1,157 +1,133 @@
-/* Events ****************** */
-// function printFirstName() {
-//   console.log("Farzin");
-// }
+// try{
 
-// function printVal(value){
-//   // console.log(window.event);
-//   console.log(value);
-// }
+//   //connec to server / database
+//   console.log(a);  
 
-// function itsHovered(){
-//   console.log("Box is Hovered");
-// }
-
-// function itsOut(){
-//   console.log("Box is not Hovered");
-// }
-
-// function itsMoving(){
-//   console.log(window.event);
+// }catch(e) {
+//   throw('wrong data');
+// }finally{
+//   console.log('finally')
 // }
 
 
-// window.onload = function(){
 
-//   let testelement = document.getElementById('test');
-//   testelement.textContent = 'salam';
-//   console.log(testelement);
+// console.log(a);
 
-// }
+// console.log("salam");
 
-// function runjs(){
-
-//     let testelement = document.getElementById('test');
-//     testelement.textContent = 'salam';
-//     console.log(testelement);
-
+// let a = 12;
+// if( typeof a != 'string' ){
+//   throw('wrong data type');
 // }
 
 
-/* trigger example for later ************ */
-// function slide(){
-//   let activeSlider = document.getElementById('activeSlider')
-//   $(activeSlider).css({
-//     'opacity': 0,
-//     'display': 'none'
-//   })
+
+/////////////////////////////////////
+// debugger;
+// let a, b, c;
+// function addTwo(num){
+//   if( num === 4 ){
+//     console.log(num);
+//   }else{
+//     console.log(d);
+//   }
 // }
 
-// setInterval(function(){
-
-//   let nexArrow = document.getElementById('activeSlider')
-//   nexArrow.trigger('click')
-
-// }, 6000)
-/************* */
-
-
-
-// document.getElementById('click-here').addEventListener('click', function(){
-//   console.log('farzin');
-// })
-
-// let targetElement = document.getElementById('div');
-// targetElement.addEventListener('mousemove', function(e){
-//   console.log(e);
-//   targetElement.textContent = `X: ${e.clientX} Y:${e.clientY}`;
-// })
-
-
-/* Conditions************** */
-// let person1 = {
-//   firstName: 'farzin',
-//   lastName: 'ahmady',
-//   age: 25.5
-// };
-
-// if(person1.age < 40 && person1.age >= 12 && person1.firstName == 'Amir') {
-//   console.log('young');
-// }else if(person1.age<20) {
-//   console.log('kid');
-// }else{
-//   console.log('middle age');
+// function addTrhee(num){
+//   return num + 3;
 // }
 
-
-// switch (person1.age){
-//   case 26:
-//   case 25:
-//     console.log('young');
-//     break;
-  
-//   case 12:
-//     console.log('kid');
-//     break;
-  
-//   case 12:
-//     console.log('kid');
-//     break;
-
-//   default:
-//     console.log('i don\'t know')
-// }
-/*************** */
-
-
-
-
-/* Loop*********** */
-let cars = ['bmw m5', 'nissan gtr', 'mercedes slr'];
-// cars[10] = 'test car';
-
-console.log(cars);
-
-
-// for (let i = 0; i < cars.length; i++) {
-//   console.log(cars[i]);
+// person = {
+//   age: 26,
+//   getAge: function(){
+//     return this.age;
+//   }
 // }
 
-// for (let i in cars) {
-//   console.log(cars[i]);
+// a = addTwo(4);
+// b = addTwo();
+// c = person.getAge();
+
+// console.log(a, b, c);
+
+/////////////////////////////////////////////
+//function declaration
+// function [functionName]([arguments]) {
+//   [functionBody]
 // }
-
-// let i = 0;
-// while(i < cars.length){
-
-//   console.log(cars[i]);
-//   i++;
-// }
-
-// let i = 25;
-// do{
-//   console.log(cars[i]);
-
-//   i++;
-// }while(i < cars.length);
-
-// cars.forEach(function(car){
-//   console.log(car);
-// });
-
-
-let i = 0;
-while( true ){
-  i++;
-
-  if(i>4 && i<=100){
-    continue;
-  }
-
-
-  console.log(i);
-  if(i >= 10){
-    break;
-  }
-
+function consolePrint(input) {
+  console.log(input);
 }
+// function printArguments (a, b, c, d){
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+//   console.log(d);
+//   console.log(arguments);
+// }
+function printArguments (){
+  console.log(arguments);
+}
+
+//function expression
+const printAddTwo = function(input) {
+  console.log(input + 2);
+};
+
+// const printAddThree = (input) => {
+//   console.log(input + 3);
+//   // somthing else
+// };
+// const printAddThree = input => {
+//   console.log(input + 3);
+// };
+const printAddThree = input => console.log(input + 3);
+
+
+
+// consolePrint('salam');
+// consolePrint(12);
+// printAddTwo(4);
+// printAddTwo(-2);
+// printAddThree(-2);
+
+// printArguments(10, 'salam', [-1, 2, 3]);
+
+// console.log(typeof printArguments);
+// console.log(typeof printAddThree);
+
+// 4!	4*3*2*1
+// 	4*3!
+// 	4*(3*2!)
+// 	4*(3*(2*1!))
+// 	4*(3*(2*(1)))
+// debugger;
+// const fact = (num) => {
+//   if( num === 1 ){
+//     return 1;
+//   }else{
+//     return num * fact(num-1);
+//   }
+// } 
+
+// console.log( fact(4) );
+
+function abc(num, cb) {
+  cb(num);
+}
+
+abc(3, function(repeat){
+  for(let i = 0; i < repeat; i++){
+    console.log(`${i}: Salam`);
+  }
+});
+
+abc(4, function(repeat){
+  for(let i = 0; i < repeat; i++){
+    console.log(`${i+2}`);
+  }
+});
+
+setTimeout(function(){
+  console.log('2 second passed');
+}, 2000);
