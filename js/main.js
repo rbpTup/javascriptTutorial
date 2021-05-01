@@ -1,133 +1,87 @@
-// try{
 
-//   //connec to server / database
-//   console.log(a);  
+// console.log(document);
+// console.log(document.head);
 
-// }catch(e) {
-//   throw('wrong data');
-// }finally{
-//   console.log('finally')
+
+let testElement, pElements;
+
+// testElement = document.getElementById('test');
+// console.log(testElement);
+// testElement.textContent = 'Hi Farzin.';
+
+
+// pElements = document.getElementsByTagName('p');
+// console.log(pElements);
+
+// // console.log(typeof pElements);
+// for (let i in pElements) {
+//   console.log(i);
+//   // pElements[i].textContent = `${i}: Hi`;
 // }
 
+// let i = 0;
+// for (let element of pElements) {
+//   console.log(element);
+//   // element.textContent = `${i}: Hi`;
 
-
-// console.log(a);
-
-// console.log("salam");
-
-// let a = 12;
-// if( typeof a != 'string' ){
-//   throw('wrong data type');
+//   i++;
 // }
 
+// pElements[0].textContent = 'Hi Farzin';
+// pElements['test'].textContent = 'Hi Farzin';
 
 
-/////////////////////////////////////
-// debugger;
-// let a, b, c;
-// function addTwo(num){
-//   if( num === 4 ){
-//     console.log(num);
-//   }else{
-//     console.log(d);
-//   }
+
+// pElements = document.getElementsByClassName('myPar');
+// for (let i = 0; i < pElements.length; i++) {
+//   pElements[i].textContent = `${i}: Hi`;
 // }
 
-// function addTrhee(num){
-//   return num + 3;
+// myElements = document.querySelector('.myPar');
+// myElements.textContent = "Hi";
+// console.log(myElements);
+
+
+
+// myElements = document.querySelectorAll('.myPar');
+// console.log(myElements);
+// let i = 0;
+// while (i < myElements.length) {
+//   myElements[i].textContent = `${i}: Hi`;
+
+//   i++;
 // }
 
-// person = {
-//   age: 26,
-//   getAge: function(){
-//     return this.age;
-//   }
-// }
+// let myForm = document.getElementById('getName');
+let myForm = document.forms['getName'];
+// console.log(myForm);
+// myForm.addEventListener('submit', e => {
+//   e.preventDefault();
+//   let firstName, lastName;
 
-// a = addTwo(4);
-// b = addTwo();
-// c = person.getAge();
+//   // firstName = myForm.getElementsByName('firstName');
+//   firstName = myForm.querySelector('[name="firstName"]').value;
+//   lastName = document.getElementsByName('lastName')[0].value;
+//   month = document.getElementsByName('month')[0].value;
+//   check = document.getElementsByName('ttr')[0].checked;
+//   radio = document.getElementsByName('myRadio');
+//   console.log( getRadioVal(radio) );
 
-// console.log(a, b, c);
-
-/////////////////////////////////////////////
-//function declaration
-// function [functionName]([arguments]) {
-//   [functionBody]
-// }
-function consolePrint(input) {
-  console.log(input);
-}
-// function printArguments (a, b, c, d){
-//   console.log(a);
-//   console.log(b);
-//   console.log(c);
-//   console.log(d);
-//   console.log(arguments);
-// }
-function printArguments (){
-  console.log(arguments);
-}
-
-//function expression
-const printAddTwo = function(input) {
-  console.log(input + 2);
-};
-
-// const printAddThree = (input) => {
-//   console.log(input + 3);
-//   // somthing else
-// };
-// const printAddThree = input => {
-//   console.log(input + 3);
-// };
-const printAddThree = input => console.log(input + 3);
+//   document.getElementById('fullName').textContent = `${firstName} ${lastName}`;
+//   // console.log(firstName);
+//   // console.log(lastName);
+//   // console.log(month);
+//   // console.log(check);
+// })
 
 
 
-// consolePrint('salam');
-// consolePrint(12);
-// printAddTwo(4);
-// printAddTwo(-2);
-// printAddThree(-2);
 
-// printArguments(10, 'salam', [-1, 2, 3]);
-
-// console.log(typeof printArguments);
-// console.log(typeof printAddThree);
-
-// 4!	4*3*2*1
-// 	4*3!
-// 	4*(3*2!)
-// 	4*(3*(2*1!))
-// 	4*(3*(2*(1)))
-// debugger;
-// const fact = (num) => {
-//   if( num === 1 ){
-//     return 1;
-//   }else{
-//     return num * fact(num-1);
-//   }
-// } 
-
-// console.log( fact(4) );
-
-function abc(num, cb) {
-  cb(num);
-}
-
-abc(3, function(repeat){
-  for(let i = 0; i < repeat; i++){
-    console.log(`${i}: Salam`);
+function getRadioVal(elems){
+  for( let i = 0; i < elems.length; i++){
+    if( elems[i].checked ){
+      return elems[i].value;
+    }
   }
-});
-
-abc(4, function(repeat){
-  for(let i = 0; i < repeat; i++){
-    console.log(`${i+2}`);
-  }
-});
-
-setTimeout(function(){
-  console.log('2 second passed');
-}, 2000);
+  return false;
+}
