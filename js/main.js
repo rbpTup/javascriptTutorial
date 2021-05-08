@@ -1,86 +1,92 @@
-// console.log(document);
-// console.log(document.head);
+/*
+function mouseEntered(e) {
+  let width, height, bgColor, bgImage, marginTop, imageAddr;
+  // console.log(e.target);
 
+  width = e.target.clientWidth;
+  height = e.target.clientHeight;
+  bgColor = e.target.style.backgroundColor;
+  bgImage = e.target.style.backgroundImage;
+  marginTop = e.target.style.marginTop;
+  imageAddr = e.target.src;
+  
+  // console.log(width, height);
+  // console.log(bgColor);
+  // console.log(bgImage);
+  // console.log(marginTop);
+  // console.log(typeof marginTop);
+  // console.log(parseInt(marginTop));
+  // console.log(typeof parseInt(marginTop));
+  // console.log(imageAddr);
 
-let testElement, pElements;
+  // e.target.style.marginTop = "2em";
+  // e.target.src = "";
 
-// testElement = document.getElementById('test');
-// console.log(testElement);
-// testElement.textContent = 'Hi Farzin.';
+  
+}
+*/
 
+function changeDivBorder() {
+  let element;
 
-// pElements = document.getElementsByTagName('p');
-// console.log(pElements);
-
-// // console.log(typeof pElements);
-// for (let i in pElements) {
-//   console.log(i);
-//   // pElements[i].textContent = `${i}: Hi`;
-// }
-
-// let i = 0;
-// for (let element of pElements) {
-//   console.log(element);
-//   // element.textContent = `${i}: Hi`;
-
-//   i++;
-// }
-
-// pElements[0].textContent = 'Hi Farzin';
-// pElements['test'].textContent = 'Hi Farzin';
-
-
-
-// pElements = document.getElementsByClassName('myPar');
-// for (let i = 0; i < pElements.length; i++) {
-//   pElements[i].textContent = `${i}: Hi`;
-// }
-
-// myElements = document.querySelector('.myPar');
-// myElements.textContent = "Hi";
-// console.log(myElements);
-
-
-
-// myElements = document.querySelectorAll('.myPar');
-// console.log(myElements);
-// let i = 0;
-// while (i < myElements.length) {
-//   myElements[i].textContent = `${i}: Hi`;
-
-//   i++;
-// }
-
-// let myForm = document.getElementById('getName');
-let myForm = document.forms['getName'];
-// console.log(myForm);
-// myForm.addEventListener('submit', e => {
-//   e.preventDefault();
-//   let firstName, lastName;
-
-//   // firstName = myForm.getElementsByName('firstName');
-//   firstName = myForm.querySelector('[name="firstName"]').value;
-//   lastName = document.getElementsByName('lastName')[0].value;
-//   month = document.getElementsByName('month')[0].value;
-//   check = document.getElementsByName('ttr')[0].checked;
-//   radio = document.getElementsByName('myRadio');
-//   console.log( getRadioVal(radio) );
-
-//   document.getElementById('fullName').textContent = `${firstName} ${lastName}`;
-//   // console.log(firstName);
-//   // console.log(lastName);
-//   // console.log(month);
-//   // console.log(check);
-// })
+  element = document.getElementById('test');
+  element.style.border = "1px solid #333";
+}
 
 
 
 
-function getRadioVal(elems){
-  for( let i = 0; i < elems.length; i++){
-    if( elems[i].checked ){
-      return elems[i].value;
+
+
+function classCheck(e){ 
+  let classList;
+  console.log(e.target.classList);
+
+  classList = e.target.classList
+  // classList.add('class2');
+  // classList.remove('class3');
+  // if( classList.contains('class3') ) {
+  //   console.log('has class');
+  // }else{
+  //   console.log('has not class');
+  // }
+
+  // classList.forEach((item) => {
+  //   console.log(item);
+  // });
+
+  // classList.toggle('class3')
+}
+
+
+const getEstrySide = sides => {
+  let minVal = 1000000, minIndex;
+
+  for (let i in sides) {
+    if( sides[i] < minVal ){
+      minVal = sides[i];
+      minIndex = i;
     }
   }
-  return false;
+
+  return minIndex;
+}
+
+
+const mouseEntered = (e) => {
+  let sides = {}, enterySide;
+
+  sides.top = e.layerY;
+  sides.right = e.target.clientWidth - e.layerX;
+  sides.bottom = e.target.clientHeight - e.layerY;
+  sides.left = e.layerX;
+  
+
+  // console.log(e);
+  // console.log(sides);
+  // console.log(e.type);
+
+  // enterySide = getEstrySide(sides);
+  e.target
+  .textContent = `Entrance from: ${getEstrySide(sides)}`;
 }
