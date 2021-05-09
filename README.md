@@ -18,3 +18,6 @@ Session4: https://drive.google.com/file/d/1kH-BYujcX0RVYuWItj3GM7eTzpQRLrJ3/view
 Session5: https://drive.google.com/file/d/1TufR_hCN2vcy9n3RCbKJkUsYK0dQFchE/view?usp=sharing
 <br /><br />
 Session6: https://drive.google.com/file/d/1To-T-Le_89P7vhQEZ_1PNiM-9x5ch3Ls/view?usp=sharing
+ <br /> <br />
+Session7: https://drive.google.com/file/d/14yk3rS1dprQTGfxT6W7CGtGJF8DkK3Z_/view?usp=sharing<br />
+Exercise7: https://drive.google.com/file/d/1hZ_KzvEsiGJcfJLz8SCP-yDvre-8ccgg/view?usp=sharing 
