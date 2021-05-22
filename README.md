@@ -21,3 +21,6 @@ Session6: https://drive.google.com/file/d/1To-T-Le_89P7vhQEZ_1PNiM-9x5ch3Ls/view
  <br /> <br />
 Session7: https://drive.google.com/file/d/14yk3rS1dprQTGfxT6W7CGtGJF8DkK3Z_/view?usp=sharing<br />
 Exercise7: https://drive.google.com/file/d/1hZ_KzvEsiGJcfJLz8SCP-yDvre-8ccgg/view?usp=sharing 
+<br /><br />
+Session8: https://drive.google.com/file/d/1AYqPfG2bv0AEe__2dAzJxp2wcZisjTDh/view?usp=sharing<br />
+Exercise8: https://drive.google.com/file/d/1TZYvu9jYmqQPAT9A0FZkSYXph4xAvDGp/view?usp=sharing
