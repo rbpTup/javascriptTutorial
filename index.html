@@ -7,15 +7,19 @@
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
 </head>
 <body>
   <main>
 
-    <div id="box1" onmouseout="mouseEntered(event)" onmouseover="mouseEntered(event)" class="class1 class3" onclick="classCheck(event)" style="float: left; font-size: 30px; position: relative; width: 300px; height: 300px; border: 1px solid #333"></div>
-    <div id="box2" onmouseout="mouseEntered(event)" onmouseover="mouseEntered(event)" class="class1 class3" onclick="classCheck(event)" style="float: left; font-size: 30px; position: relative; width: 300px; height: 300px; border: 1px solid #333"></div>
-    <div id="box3" onmouseout="mouseEntered(event)" onmouseover="mouseEntered(event)" class="class1 class3" onclick="classCheck(event)" style="float: left; font-size: 30px; position: relative; width: 300px; height: 300px; border: 1px solid #333"></div>
-    <div id="box4" onmouseout="mouseEntered(event)" onmouseover="mouseEntered(event)" class="class1 class3" onclick="classCheck(event)" style="float: left; font-size: 30px; position: relative; width: 300px; height: 300px; border: 1px solid #333"></div>
+    <div class="wrap">
+      <div id="box1" onmouseout="mouseEntered(event)" onmouseover="mouseEntered(event)" class="myBox" onclick="classCheck(event)" style="float: left; font-size: 30px; position: relative; width: 300px; height: 300px; border: 1px solid #333"></div>
+      <div id="box2" onmouseout="mouseEntered(event)" onmouseover="mouseEntered(event)" class="myBox" onclick="classCheck(event)" style="float: left; font-size: 30px; position: relative; width: 300px; height: 300px; border: 1px solid #333"></div>
+      <div id="box3" onmouseout="mouseEntered(event)" onmouseover="mouseEntered(event)" class="myBox" onclick="classCheck(event)" style="float: left; font-size: 30px; position: relative; width: 300px; height: 300px; border: 1px solid #333"></div>
+      <div id="box4" onmouseout="mouseEntered(event)" onmouseover="mouseEntered(event)" class="myBox" onclick="classCheck(event)" style="float: left; font-size: 30px; position: relative; width: 300px; height: 300px; border: 1px solid #333"></div>
+      <span id="hoverBox"></span>
+    </div>
 
     <div id="hamberger" style="position: relative; left: 30px; font-size: 30px">
       <i onclick="menuTrigger(event)" class="fas fa-bars"></i>
